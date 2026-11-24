@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="de-CH" translate="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="google" content="notranslate">
+<meta name="robots" content="noindex, nofollow">
+<title>Kumo Sushi &amp; Momo Weinfelden – Sushi &amp; Momo am Wolkenweg</title>
+<meta name="description" content="Kumo Sushi &amp; Momo in Weinfelden: frisch gerolltes Sushi, handgemachte Momo, Sushi-Boxen zum Abholen. Musterentwurf mit fiktiven Angaben.">
+<meta property="og:title" content="Kumo Sushi &amp; Momo · Weinfelden">
+<meta property="og:description" content="Musterentwurf von Julia &amp; Robin Mirku – Namen und Angaben fiktiv.">
+<meta property="og:image" content="https://julia-mirku.github.io/kumo-sushi-momo/img/teller-1000.jpg">
+<meta name="theme-color" content="#16110f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%238f4560'/%3E%3Ctext x='32' y='41' font-family='Arial Black,Arial' font-weight='900' font-size='24' text-anchor='middle' fill='%23f5efe4'%3EKM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Public+Sans:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/teller-560.webp" imagesrcset="img/teller-560.webp 560w, img/teller-1000.webp 1000w" imagesizes="(max-width:900px) 92vw, 46vw" fetchpriority="high">
+<style>
+:root{
+  --ink:#16110f; --ink2:#231a16; --ink3:#33261f;
+  --lack:#6f3a4c; --lack2:#8f4560; --lackD:#4e2333;
+  --tee:#97a36a; --teeD:#5f6b41;
+  --holz:#c99057; --holz2:#e2b27a; --holzD:#7c5131; --walnuss:#24190f;
+  --rice:#f6f0e5; --rice2:#ece3d3; --rice3:#dcd0bb;
+  --sakura:#f3a3b5; --sakura2:#ffd0da;
+  --wasabi:#9dbb3c;
+  --disp:"Syne", "Arial Black", system-ui, sans-serif;
+  --sans:"Public Sans", system-ui, -apple-system, sans-serif;
+  --hdr:62px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;overflow-y:scroll;scroll-padding-top:var(--hdr)}
+html,body{overflow-x:clip;max-width:100%}
+body{background:var(--ink);color:var(--rice);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus:not(:focus-visible){outline:none}
+:focus-visible{outline:2px solid var(--sakura);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.disp{font-family:var(--disp);font-weight:800;letter-spacing:-.01em;line-height:1.02}
+.kick{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;transition:background-color .2s,box-shadow .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.red{background:var(--lack2);color:#fff}
+.btn.line{border:2px solid currentColor}
+.btn.rice{background:var(--rice);color:var(--ink)}
+.btn.holz{background:var(--holz2);color:#2a1a0c}
+@media (hover:hover){.btn.holz:hover{background:#efc391;box-shadow:0 0 0 6px rgba(226,178,122,.25)}}
+@media (hover:hover){
+  .btn.red:hover{background:#a5566f;box-shadow:0 0 0 6px rgba(243,163,181,.22)}
+  .btn.line:hover{background:rgba(246,240,229,.1);box-shadow:0 0 0 6px rgba(246,240,229,.08)}
+  .btn.rice:hover{background:#fff;box-shadow:0 0 0 6px rgba(243,163,181,.3)}
+}
+.btn:active{transform:translateY(1px)}
+
+/* ===== Header ===== */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:50;height:var(--hdr);display:flex;align-items:center;transition:background-color .3s,box-shadow .3s}
+.hdr.solid{background:rgba(22,17,15,.9);box-shadow:0 1px 0 rgba(246,240,229,.08);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--lack2);flex:none;box-shadow:inset 0 -6px 0 rgba(0,0,0,.18)}
+.logo b{font-family:var(--disp);font-weight:800;font-size:15px;letter-spacing:.02em;line-height:1;white-space:nowrap}
+.logo small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;margin-top:3px;font-weight:700}
+.nav{display:none;gap:4px}
+.nav a{padding:8px 12px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;transition:background-color .2s,color .2s}
+@media (hover:hover){.nav a:hover{background:rgba(246,240,229,.1);color:var(--sakura2)}}
+.hdr .tel{min-height:40px;padding:0 14px;font-size:15px;gap:8px}
+.hdr .order{display:none;min-height:40px;padding:0 18px;font-size:15px}
+@media (min-width:1000px){.nav{display:flex}.hdr .order{display:inline-flex}.right{display:flex;gap:10px;align-items:center}}
+
+/* ===== Hero: Drehteller ===== */
+#hero{position:relative;height:100vh;height:100svh;min-height:620px;overflow:hidden;background:radial-gradient(70% 45% at 50% 72%,rgba(111,58,76,.22),rgba(111,58,76,0) 70%),linear-gradient(to bottom,var(--ink) 0%,var(--ink) 50%,#1c1512 100%)}
+@media (min-width:900px){#hero{background:radial-gradient(45% 60% at 74% 52%,rgba(111,58,76,.22),rgba(111,58,76,0) 70%),linear-gradient(to bottom,var(--ink) 0%,var(--ink) 50%,#1c1512 100%)}}
+.hero-in{position:relative;height:100%;padding-top:calc(var(--hdr) + 18px)}
+.htext{position:relative;z-index:2}
+.htext .kick{color:var(--sakura)}
+h1{margin-top:12px}
+.h1a{display:block;font-family:var(--disp);font-weight:800;font-size:clamp(46px,13.4vw,112px);line-height:.98;letter-spacing:-.015em}
+.ending{display:grid;margin-top:12px;min-height:2.6em;font-size:clamp(21px,5.6vw,34px);font-weight:900;line-height:1.15}
+.ending .e{grid-area:1/1;opacity:0;transform:translateY(10px);transition:opacity .12s,transform .12s}
+.ending .e.on{opacity:1;transform:none;transition:opacity .35s .1s,transform .45s .1s var(--ease)}
+.ending .e q{quotes:"«" "»";color:var(--rice)}
+.ending .e q::before{color:var(--lack2)}
+.ending .e cite{display:block;font-style:normal;font-size:14px;font-weight:500;letter-spacing:.02em;margin-top:6px;color:rgba(246,240,229,.7)}
+.score{display:flex;align-items:center;gap:12px;margin-top:16px}
+.stars{position:relative;font-size:22px;letter-spacing:2px;line-height:1;color:rgba(246,240,229,.2)}
+.stars span{position:absolute;inset:0 auto 0 0;overflow:hidden;color:#ffb21e;white-space:nowrap;width:calc(var(--p,0)*100%)}
+.score b{font-family:var(--disp);font-weight:800;font-size:34px;line-height:1;width:2.75em;flex:none;font-variant-numeric:tabular-nums}
+.score small{font-size:13px;line-height:1.25;color:rgba(246,240,229,.75);font-weight:500}
+.hcta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.plate{position:absolute;z-index:1;left:50%;width:min(112vw,64svh,640px);aspect-ratio:1;bottom:calc(min(112vw,64svh,640px) * -.36);transform:translateX(-50%)}
+.plate .rot{width:100%;height:100%;border-radius:50%;overflow:hidden;transform:rotate(calc(var(--p,0) * 150deg - 18deg));box-shadow:0 30px 80px rgba(0,0,0,.6),0 0 0 10px rgba(122,58,80,.25);will-change:transform}
+.plate img{width:100%;height:100%;object-fit:cover}
+.hint{position:absolute;z-index:3;right:16px;bottom:16px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(246,240,229,.75);display:flex;gap:8px;align-items:center;transition:opacity .4s;background:rgba(22,17,15,.6);padding:6px 10px;border-radius:999px}
+.hint svg{width:14px;height:14px}
+#hero.done .hint{opacity:0}
+.addr{display:none}
+.k-m{display:none;text-decoration:none;border-bottom:1px solid rgba(243,163,181,.5)}
+@media (max-width:899px){.k-d{display:none}.k-m{display:inline}}
+@media (max-width:899px){ .hcta .btn{flex:1 1 0;padding:0 14px;font-size:15px}
+  .hero-in{display:flex;flex-direction:column}
+  .plate{position:relative;left:auto;bottom:auto;transform:none;width:100%;aspect-ratio:auto;flex:1 1 0;min-height:0;container-type:size;display:flex;align-items:center;justify-content:center;padding:14px 0 58px}
+  .plate .rot{width:min(calc(100cqw - 28px),calc(100cqh - 28px),560px);height:min(calc(100cqw - 28px),calc(100cqh - 28px),560px);flex:none} }
+@media (max-width:420px){ .logo b{font-size:13px} .logo i{width:26px;height:26px} .logo{gap:8px} .hdr .tel{padding:0 11px;font-size:14px;gap:6px;min-height:38px} .hdr .tel svg{width:15px;height:15px} }
+
+@media (max-height:700px) and (max-width:899px){ .h1a{font-size:clamp(40px,11.5vw,64px)} .ending{font-size:20px} .score{margin-top:10px} .hcta{margin-top:12px} }
+@media (min-width:900px){
+  #hero{min-height:640px}
+  .hero-in{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:32px;padding-top:var(--hdr)}
+  .h1a{font-size:min(5.6vw,10.5vh,96px)}
+  .ending{font-size:clamp(26px,2.4vw,36px)}
+  .plate{position:relative;left:auto;bottom:auto;transform:none;width:min(44vw,calc(100svh - 190px - var(--bar0,0px)),640px);justify-self:end;margin-right:12px}
+  .addr{display:flex;gap:18px;margin-top:22px;font-size:15px;color:rgba(246,240,229,.75)}
+  .addr a{text-decoration:none;border-bottom:1px solid rgba(246,240,229,.3)}
+  .hint{left:50%;right:auto;transform:translateX(-50%)}
+}
+
+/* ===== Sektionen allgemein ===== */
+section{position:relative}
+.pad{padding:30px 0}
+main>section.pad{margin-top:-1px}
+.sh{font-family:var(--disp);font-weight:800;font-size:clamp(36px,8.6vw,72px);line-height:1;letter-spacing:-.01em}
+.lead{font-size:18px;max-width:46ch;margin-top:14px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== Sushi oder Momo ===== */
+#beides{--bg:#1c1512;--prev:#1c1512;--next:var(--ink2);color:var(--rice)}
+#beides .kick{color:var(--lack)}
+.switch{position:relative;display:grid;grid-template-columns:1fr 1fr;margin-top:28px;background:var(--rice2);border-radius:999px;padding:6px;max-width:520px}
+.switch .pill{position:absolute;top:6px;bottom:6px;left:6px;width:calc(50% - 6px);border-radius:999px;background:var(--ink);transition:transform .45s var(--ease)}
+.switch[data-k="momo"] .pill{transform:translateX(100%)}
+.switch button{position:relative;z-index:1;min-height:56px;font-family:var(--disp);font-size:22px;border-radius:999px;transition:color .3s}
+.switch button[aria-selected="true"]{color:var(--rice)}
+@media (hover:hover){.switch button[aria-selected="false"]:hover{color:var(--lack2)}}
+.dual{display:grid;margin-top:28px}
+.dual .pane{grid-area:1/1;display:grid;gap:22px;opacity:0;visibility:hidden;transition:opacity .45s,visibility 0s .45s}
+.dual .pane.on{opacity:1;visibility:visible;transition:opacity .45s}
+.pane figure{border-radius:22px;overflow:hidden;aspect-ratio:4/3;background:var(--rice3)}
+.pane figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+@media (hover:hover){.pane figure:hover img{transform:scale(1.04)}}
+.pane h3{font-family:var(--disp);font-weight:800;font-size:30px;line-height:1.05}
+.pane p{margin-top:10px}
+.favs{list-style:none;margin-top:18px;border-top:2px solid var(--ink)}
+.favs li{display:flex;justify-content:space-between;gap:12px;padding:12px 4px;border-bottom:1px solid rgba(22,17,15,.15);border-radius:8px;transition:background-color .2s}
+.favs li span small{display:block;font-size:14px;color:#5d4c42}
+.price{font-weight:900;white-space:nowrap;font-variant-numeric:tabular-nums;padding:2px 8px;border-radius:8px;align-self:flex-start;transition:background-color .2s,color .2s}
+@media (hover:hover){.favs li:hover{background:rgba(122,58,80,.06)} .favs li:hover .price,.item:hover .price{background:var(--lack2);color:#fff}}
+.dialekt{margin-top:40px;padding:22px 22px 20px;border-radius:22px;background:var(--ink);color:var(--rice);display:grid;gap:8px;transition:box-shadow .25s}
+.dialekt q{font-size:21px;font-weight:900;line-height:1.3;quotes:"«" "»"}
+.dialekt cite{font-style:normal;font-size:14px;opacity:.75}
+.dialekt small{font-size:14px;color:var(--sakura)}
+@media (hover:hover){.dialekt:hover{box-shadow:0 0 0 6px rgba(243,163,181,.35)}}
+@media (min-width:740px){
+  .dual .pane{grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+  .beides-top{display:grid;grid-template-columns:1fr auto;align-items:end;gap:30px}
+  .switch{margin-top:0;width:440px}
+}
+
+/* ===== Bento-Karte ===== */
+#karte{--bg:var(--lack);--prev:var(--ink2);--next:var(--walnuss);color:var(--rice)}
+#karte .kick{color:var(--sakura2)}
+.karte-grid{display:grid;gap:22px;margin-top:30px}
+.bento{background:#120c0a;border-radius:22px;padding:8px;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-flow:dense;gap:8px;box-shadow:0 24px 60px rgba(60,5,2,.45),inset 0 0 0 1px rgba(255,255,255,.06)}
+.fach{position:relative;min-height:92px;padding:14px 14px 12px;border-radius:14px;background:linear-gradient(160deg,#2a1d18,#1d1411);text-align:left;display:flex;flex-direction:column;justify-content:space-between;gap:8px;transition:background-color .2s,box-shadow .2s,transform .2s;box-shadow:inset 0 0 0 1px rgba(255,255,255,.05)}
+.fach b{font-family:var(--disp);font-weight:800;font-size:19px;line-height:1.05}
+.fach span{font-size:13px;color:rgba(246,240,229,.7);font-weight:500}
+.fach.w2{grid-column:span 2}
+.fach.vegan b::after{content:"";display:inline-block;width:10px;height:10px;margin-left:8px;border-radius:50%;background:var(--wasabi);vertical-align:middle}
+.fach[aria-pressed="true"]{background:var(--rice);color:var(--ink);box-shadow:inset 0 0 0 3px var(--sakura)}
+.fach[aria-pressed="true"] span{color:#5d4c42}
+@media (hover:hover){.fach[aria-pressed="false"]:hover{box-shadow:inset 0 0 0 2px var(--sakura),0 0 18px rgba(243,163,181,.25)}}
+.blatt{background:var(--rice);color:var(--ink);border-radius:22px;padding:22px 18px;scroll-margin-top:calc(var(--hdr) + 12px)}
+.blatt-hd{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:3px solid var(--ink);padding-bottom:12px}
+.blatt-hd h3{font-family:var(--disp);font-weight:800;font-size:30px;line-height:1}
+.blatt-hd span{font-size:14px;color:#5d4c42;text-align:right}
+.items{list-style:none}
+.item{display:flex;justify-content:space-between;gap:14px;padding:13px 6px;border-bottom:1px solid rgba(22,17,15,.13);border-radius:8px;transition:background-color .2s}
+@media (hover:hover){.item:hover{background:rgba(122,58,80,.07)}}
+.item b{font-weight:900}
+.item small{display:block;font-size:14px;color:#5d4c42;line-height:1.4;margin-top:2px}
+.tag{display:inline-block;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:2px}
+.tag.v{background:var(--wasabi);color:#1b2405}
+.tag.vg{background:#e9dfc7;color:#5b4a2c}
+.tag.s{background:var(--lack2);color:#fff}
+.tag.b{background:var(--ink);color:var(--rice)}
+.blatt-ft{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center;justify-content:space-between}
+.blatt-ft p{font-size:13px;color:#5d4c42;max-width:40ch}
+.herkunft{margin-top:26px;font-size:14px;color:rgba(246,240,229,.85)}
+.herkunft b{color:#fff}
+@media (min-width:700px){.bento{grid-template-columns:repeat(4,1fr)}.fach{min-height:112px}}
+@media (min-width:740px){.karte-grid{grid-template-columns:1.05fr 1fr;align-items:start}.blatt{position:sticky;top:calc(var(--hdr) + 16px);padding:28px 26px;max-height:calc(100vh - var(--hdr) - 32px);overflow:auto;overscroll-behavior:contain}}
+
+/* ===== Boxen ===== */
+#boxen{--bg:var(--walnuss);--prev:var(--lack);--next:#1c1512;color:var(--rice)}
+#boxen .kick{color:var(--holz2)}
+.boxen-grid{display:grid;gap:30px;margin-top:30px}
+.stapel{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;align-items:end;height:220px;padding:22px 2px 0;border-bottom:3px solid rgba(226,178,122,.35);overflow:hidden;cursor:pointer}
+.kiste{position:relative;border-radius:10px 10px 4px 4px;background:linear-gradient(180deg,var(--tee),var(--teeD));color:#fbfaf2;text-shadow:0 1px 2px rgba(40,45,20,.45);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:8px;height:calc(var(--h) * 1%);min-height:58px;transition:box-shadow .2s,filter .2s,background .2s;box-shadow:inset 0 3px 0 rgba(255,255,255,.22)}
+@media (hover:hover){.kiste{transition:transform .38s ease,box-shadow .2s,filter .2s,background .2s}.kiste:hover{transform:translateY(4px)}}
+.boxinfo>*{transition:opacity .22s ease}
+.boxinfo.wechsel>*{opacity:0}
+.kiste b{font-family:var(--disp);font-weight:800;font-size:22px;line-height:1}
+.kiste span{font-size:12px;font-weight:700;opacity:.85;margin-top:4px}
+.kiste[aria-pressed="true"]{background:linear-gradient(180deg,var(--rice),var(--rice3));color:var(--ink);text-shadow:none;box-shadow:0 0 0 3px var(--tee),0 10px 24px rgba(0,0,0,.35)}
+@media (hover:hover){.kiste[aria-pressed="false"]:hover{filter:brightness(1.08);box-shadow:0 0 0 3px rgba(151,163,106,.55)}}
+.boxinfo{margin-top:22px;background:rgba(255,236,210,.06);border-radius:22px;padding:22px 20px;box-shadow:inset 0 0 0 1px rgba(246,240,229,.08)}
+.boxinfo .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.boxinfo h3{font-family:var(--disp);font-weight:800;font-size:clamp(24px,7vw,30px);line-height:1;white-space:nowrap}
+.boxinfo .pr{font-family:var(--disp);font-size:30px;line-height:1;color:var(--holz2);padding:4px 10px;border-radius:12px;transition:background-color .2s}
+@media (hover:hover){.boxinfo .pr:hover{background:rgba(226,178,122,.15)}}
+.boxinfo .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.boxinfo .facts span{font-size:14px;font-weight:700;padding:5px 12px;border-radius:999px;background:rgba(246,240,229,.08)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;list-style:none}
+.chips li{font-size:14px;padding:5px 10px;border-radius:10px;background:rgba(246,240,229,.06);box-shadow:inset 0 0 0 1px rgba(246,240,229,.12);transition:background-color .2s}
+@media (hover:hover){.chips li:hover{background:rgba(226,178,122,.2)}}
+.boxinfo .btn{margin-top:20px}
+.boxfoto{border-radius:22px;overflow:hidden;aspect-ratio:1160/880}
+.boxfoto img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+@media (hover:hover){.boxfoto:hover img{transform:scale(1.03)}}
+.boxfoto figcaption{margin:0}
+.boxquote{margin-top:16px;font-size:16px;line-height:1.5;color:rgba(246,240,229,.88);padding:18px 20px;border-radius:18px;background:rgba(255,236,210,.06);box-shadow:inset 0 0 0 1px rgba(246,240,229,.1)}
+.boxquote q{quotes:"«" "»"}
+.boxquote cite{font-style:normal;opacity:.7;font-size:14px}
+@media (min-width:740px){.boxen-grid{grid-template-columns:1.15fr .85fr;align-items:start;gap:56px}.stapel{height:260px;gap:12px}}
+
+/* ===== Sternenwand ===== */
+#stimmen{--bg:#1c1512;--prev:var(--walnuss);--next:var(--ink);color:var(--rice)}
+#stimmen .kick{color:var(--lack)}
+.stimmen-grid{display:grid;gap:26px;margin-top:30px}
+.karte-q{position:sticky;top:calc(var(--hdr) + 8px);z-index:2;background:var(--ink);color:var(--rice);border-radius:22px;padding:22px 20px;min-height:210px;box-shadow:0 10px 30px rgba(22,17,15,.25);display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.karte-q .st{color:#ffb21e;letter-spacing:2px;font-size:18px}
+.karte-q blockquote{font-size:clamp(20px,4.8vw,27px);font-weight:900;line-height:1.3;transition:opacity .25s}
+.karte-q blockquote.fade{opacity:0}
+.karte-q footer{display:flex;justify-content:space-between;gap:10px;font-size:14px;color:rgba(246,240,229,.75)}
+.wand{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
+.wand button{aspect-ratio:1;display:grid;place-items:center;border-radius:8px;color:var(--lack2);transition:background-color .2s,color .2s,transform .2s,opacity .3s}
+.wand button svg{width:76%;height:76%;fill:currentColor}
+.wand.pre button{opacity:.12}
+.wand button.lit{opacity:1}
+.wand button[aria-pressed="true"]{background:var(--ink);color:#ffb21e}
+@media (hover:hover){.wand.ready button:hover{background:rgba(122,58,80,.12)}}
+.wand-info{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:#5d4c42;margin-top:12px}
+.wand-info a{font-weight:700;color:var(--lack)}
+@media (min-width:740px){.stimmen-grid{grid-template-columns:minmax(0,.62fr) minmax(0,1fr);align-items:stretch;gap:36px}.karte-q{position:relative;top:auto;min-height:0;padding:26px 26px 22px}.karte-q blockquote{font-size:clamp(18px,1.7vw,22px)}.wand{grid-template-columns:repeat(20,1fr);gap:5px}}
+
+/* ===== Besuch ===== */
+#besuch{--bg:var(--ink);--prev:#1c1512;--next:#0d0a09;color:var(--rice)}
+#besuch .kick{color:var(--sakura)}
+.saal{border-radius:22px;overflow:hidden;margin-top:26px;aspect-ratio:16/8}
+.saal img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+@media (hover:hover){.saal:hover img{transform:scale(1.03)}}
+.besuch-grid{display:grid;gap:22px;margin-top:22px}
+.besuch-grid .saal{margin-top:0}
+.card{background:var(--ink2);border-radius:22px;padding:22px 20px;box-shadow:inset 0 0 0 1px rgba(246,240,229,.08)}
+.card h3{font-family:var(--disp);font-weight:800;font-size:24px;line-height:1.1}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:10px;font-weight:700;font-size:15px;padding:6px 12px;border-radius:999px;background:rgba(246,240,229,.08)}
+.status i{width:9px;height:9px;border-radius:50%;background:#888}
+.status.open i{background:var(--wasabi);box-shadow:0 0 0 4px rgba(157,187,60,.25)}
+.status.closed i{background:var(--lack2)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:16px}
+.days button{min-height:46px;border-radius:12px;font-weight:900;font-size:15px;box-shadow:inset 0 0 0 1px rgba(246,240,229,.14);transition:box-shadow .2s,background-color .2s,color .2s}
+.days button.zu{color:rgba(246,240,229,.45)}
+.days button[aria-pressed="true"]{background:var(--rice);color:var(--ink);box-shadow:none}
+@media (hover:hover){.days button[aria-pressed="false"]:hover{box-shadow:inset 0 0 0 2px var(--sakura)}}
+.dayinfo{margin-top:14px;min-height:56px}
+.dayinfo b{display:block;font-size:15px;color:var(--sakura)}
+.dayinfo span{font-size:22px;font-weight:900;font-variant-numeric:tabular-nums}
+.kontakt{list-style:none;margin-top:14px;display:grid;gap:4px}
+.kontakt a{display:flex;gap:12px;align-items:center;padding:10px 8px;border-radius:12px;text-decoration:none;font-weight:700;transition:background-color .2s}
+.kontakt a svg{width:20px;height:20px;flex:none;color:var(--sakura)}
+.kontakt a small{display:block;font-weight:500;font-size:13px;opacity:.7}
+@media (hover:hover){.kontakt a:hover{background:rgba(246,240,229,.08)}}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pay span{font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;background:rgba(246,240,229,.08)}
+.actions{display:grid;gap:10px;margin-top:18px}
+@media (min-width:740px){.besuch-grid{grid-template-columns:1fr 1fr 1fr}.saal{aspect-ratio:16/6}}
+
+
+/* ===== Kleiner Laden ===== */
+#theke{--bg:var(--ink2);--prev:#1c1512;--next:var(--lack);color:var(--rice);overflow:hidden}
+#theke .kick{color:var(--sakura)}
+.theke-grid{display:grid;gap:26px;margin-top:30px}
+.theke-foto{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3}
+.theke-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+@media (hover:hover){.theke-foto:hover img{transform:scale(1.03)}}
+.theke-foto figcaption{position:absolute;left:12px;bottom:12px;font-size:13px;font-weight:700;background:rgba(22,17,15,.72);padding:6px 12px;border-radius:999px}
+.storys{display:grid;gap:14px;list-style:none}
+.story{background:var(--rice);color:var(--ink);border-radius:22px;padding:20px 20px 18px;transition:box-shadow .25s,transform .25s}
+@media (hover:hover){.story:hover{box-shadow:0 0 0 5px rgba(243,163,181,.45);transform:translateY(-2px)}}
+.story h3{font-family:var(--disp);font-weight:800;font-size:clamp(24px,6.4vw,30px);line-height:1.05;color:var(--lack)}
+.story blockquote{margin-top:10px;font-size:16px;line-height:1.5}
+.story cite{display:block;margin-top:10px;font-style:normal;font-size:13px;color:#5d4c42}
+.antwort{margin-top:26px;display:grid;gap:16px;align-items:center;background:var(--ink);border-radius:22px;padding:22px 20px;box-shadow:inset 0 0 0 1px rgba(246,240,229,.08)}
+.antwort .zahl{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.antwort .zahl b{font-family:var(--disp);font-weight:800;font-size:44px;line-height:1;color:var(--sakura2)}
+.antwort .zahl span{font-size:15px;font-weight:700;color:rgba(246,240,229,.8)}
+.bubble{position:relative;justify-self:start;background:var(--rice);color:var(--ink);font-weight:900;font-size:20px;padding:12px 18px;border-radius:18px 18px 18px 4px;transition:box-shadow .2s}
+@media (hover:hover){.bubble:hover{box-shadow:0 0 0 5px rgba(243,163,181,.35)}}
+.antwort p{font-size:15px;color:rgba(246,240,229,.8)}
+@media (min-width:740px){.theke-grid{grid-template-columns:1fr 1fr;align-items:start;gap:40px}.theke-foto{aspect-ratio:auto;height:100%;min-height:520px}.antwort{grid-template-columns:auto auto 1fr;gap:28px;padding:24px 28px}}
+
+/* Fotos im Kartenblatt */
+.blatt-foto{border-radius:16px;overflow:hidden;aspect-ratio:16/8;margin-bottom:16px;background:var(--rice3)}
+.blatt-foto img{width:100%;height:100%;object-fit:cover}
+
+/* ===== Weiche Übergänge (18c) ===== */
+main>section.pad{background:var(--bg)}
+
+#hero::after{display:none;content:"";position:absolute;left:0;right:0;bottom:0;height:52px;background:linear-gradient(to bottom,rgba(22,17,15,0),color-mix(in srgb,var(--ink) 50%,#1c1512));pointer-events:none;z-index:2}
+
+/* ===== Lightbox (18e) ===== */
+.zoomable{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,8,7,.94);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .25s,visibility 0s .25s;touch-action:none;overflow:hidden}
+.lb.open{opacity:1;visibility:visible;transition:opacity .25s}
+.lb img{max-width:96vw;max-height:88vh;max-height:88dvh;width:auto;height:auto;border-radius:12px;transform-origin:0 0;cursor:zoom-in;user-select:none;-webkit-user-drag:none}
+.lb.zoomed img{cursor:grab}
+.lb .x{position:absolute;top:calc(12px + env(safe-area-inset-top));right:12px;width:48px;height:48px;border-radius:50%;background:rgba(246,240,229,.14);color:var(--rice);font-size:26px;line-height:48px;text-align:center;transition:background-color .2s}
+@media (hover:hover){.lb .x:hover{background:rgba(243,163,181,.35)}}
+.lb p{position:absolute;bottom:calc(14px + env(safe-area-inset-bottom));left:16px;right:16px;text-align:center;font-size:13px;color:rgba(246,240,229,.7)}
+
+/* ===== Unter den Bildschirm: Computer (18a/18b) ===== */
+@media (min-width:740px){
+  .pad{padding:46px 0}
+  .sh{font-size:min(4.6vw,7.2vh,64px)}
+  .head{display:grid;grid-template-columns:1.15fr 1fr;gap:6px 48px;align-items:end}
+  .head .kick{grid-column:1/-1}
+  .head .lead{margin:0 0 4px}
+  .pane figure{aspect-ratio:auto;height:min(50vh,440px)}
+  .favs li{padding:9px 4px}
+  .dialekt{margin-top:24px;grid-template-columns:1fr minmax(220px,auto);align-items:center;gap:4px 28px;padding:16px 24px}
+  .dialekt q{font-size:18px;grid-row:span 2}
+  .dialekt cite,.dialekt small{grid-column:2}
+  .theke-grid{grid-template-columns:1fr 1fr;align-items:stretch;gap:32px;margin-top:26px}
+  .theke-l{display:flex;flex-direction:column;gap:14px;contain:size}
+  .theke-foto{flex:1 1 auto;min-height:0;aspect-ratio:auto;height:auto}
+  .story{padding:16px 20px 14px}
+  .story blockquote{font-size:15px;margin-top:6px}
+  .story cite{margin-top:6px}
+  .storys{gap:12px}
+  .antwort{margin-top:0;grid-template-columns:auto 1fr;gap:10px 18px;padding:16px 20px}
+  .antwort .zahl b{font-size:38px}
+  .antwort p{grid-column:1/-1;font-size:14px}
+  .bubble{font-size:17px;justify-self:end}
+  .karte-grid{margin-top:26px}
+  .fach{min-height:110px}
+  .herkunft{margin-top:18px}
+  .boxen-grid{align-items:stretch}
+  .boxen-r{display:flex;flex-direction:column}
+
+  .bubble{white-space:nowrap}
+  .boxfoto{position:relative}
+
+  .stapel{height:min(180px,21vh);margin-top:20px}
+  .chips{gap:5px;margin-top:12px}
+  .chips li{font-size:13px;padding:3px 9px}
+  .boxinfo .btn{margin-top:14px;min-height:44px}
+  #besuch .card{padding:18px 20px}
+  .days button{min-height:42px}
+  .kontakt a{padding:7px 8px}
+  .dayinfo{min-height:0}
+  .boxinfo{margin-top:16px;padding:18px 20px}
+  .stimmen-grid{margin-top:26px}
+  .besuch-grid{grid-template-columns:1.25fr 1fr 1fr;margin-top:26px}
+  .besuch-grid .saal{grid-row:span 2;margin:0;aspect-ratio:auto;contain:size;height:100%}
+  .besuch-grid .card.wide{grid-column:2/4}
+  .card.wide .actions{display:flex;flex-wrap:wrap;margin-top:14px}
+  .card.wide .actions .btn{padding:0 16px;font-size:15px;min-height:44px}
+  .card.wide p{margin-top:6px!important}
+}
+@media (min-width:740px) and (max-height:800px){
+  .pad{padding:40px 0}
+  .lead{font-size:16px;line-height:1.45}
+  .kick{font-size:12px}
+  .pane figure{height:min(46vh,400px)}
+  .favs li{padding:6px 4px}
+  .pane p{font-size:16px}
+  .dialekt{margin-top:16px;padding:12px 20px}
+  .dialekt q{font-size:16px}
+  .story{padding:12px 18px 10px}
+  .story h3{font-size:24px}
+  .story blockquote{font-size:14px;line-height:1.45}
+  .antwort{padding:12px 18px}
+  .antwort .zahl b{font-size:32px}
+  .fach{min-height:94px;padding:12px}
+  .herkunft{font-size:13px;margin-top:12px}
+  .stapel{height:150px;margin-top:14px}
+  .boxinfo{padding:14px 18px}
+  .boxinfo h3,.boxinfo .pr{font-size:24px}
+  .karte-q{padding:20px 22px}
+  .wand{gap:3px}
+  .kontakt a small{display:none}
+  .kontakt{margin-top:8px;gap:0}
+  .pay{margin-top:8px}
+  .days{margin-top:10px}
+  .dayinfo{margin-top:10px}
+  .dayinfo span{font-size:20px}
+  .theke-grid,.karte-grid,.stimmen-grid,.besuch-grid{margin-top:18px}
+}
+@media (min-width:1200px){.card.wide{display:grid;grid-template-columns:1fr auto;gap:4px 20px;align-items:center}.card.wide .actions{margin-top:0;grid-row:1/3;grid-column:2}}
+@media (min-width:740px){.karte-grid{align-items:stretch}.blatt{position:relative;top:auto;contain:size;max-height:none;overflow:auto;padding:22px 24px}.blatt-foto{aspect-ratio:16/6.5}}
+@media (min-width:740px) and (max-width:1023px){
+  .bento{grid-template-columns:repeat(3,1fr)}
+  .fach{min-height:88px;padding:12px}
+  .fach b{font-size:16px}
+  .fach[data-id=vegan]{grid-column:span 3}
+  .fach[data-id=drinks]{grid-column:span 2}
+  .wand{grid-template-columns:repeat(10,1fr)}
+  .besuch-grid{grid-template-columns:1fr 1fr}
+  .besuch-grid .saal{grid-row:auto;grid-column:1/-1;contain:none;height:auto}
+  .besuch-grid .card.wide{grid-column:1/-1}
+  .head{grid-template-columns:1fr}
+  .beides-top{grid-template-columns:1fr;gap:16px}
+  .switch{width:100%;max-width:none}
+  .dialekt{grid-template-columns:1fr}
+  .dialekt q{grid-row:auto}
+  .dialekt cite,.dialekt small{grid-column:1}
+  .besuch-grid .saal{aspect-ratio:16/6}
+  .antwort{grid-template-columns:1fr}
+  .bubble{justify-self:start}
+}
+
+/* ===== Entwurfs-Hinweis (Regel 22) ===== */
+:root{--bar:0px}
+.entwurf{position:fixed;inset:0 0 auto 0;z-index:60;background:var(--rice2);color:var(--ink);font-size:12.5px;line-height:1.4;font-weight:500;text-align:center;padding:6px 16px;transition:transform .45s var(--ease);box-shadow:0 1px 0 rgba(22,17,15,.12)}
+.entwurf b{font-weight:900}
+.entwurf i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--lack2);margin-right:7px;vertical-align:1px}
+.hdr{top:var(--bar)}
+html.bar-anim .hdr{transition:top .45s var(--ease),background-color .3s,box-shadow .3s}
+.hero-in{padding-top:calc(var(--hdr) + var(--bar0,0px) + 18px)}
+@media (min-width:900px){.hero-in{padding-top:calc(var(--hdr) + var(--bar0,0px))}}
+html.bar-off .entwurf{transform:translateY(-102%)}
+html.bar-off{--bar:0px!important}
+
+/* ===== Eine Stimmung (18h): helle Bloecke jetzt dunkel ===== */
+#beides .kick,#stimmen .kick{color:var(--sakura)}
+#karte .kick{color:var(--sakura2)}
+.switch{background:rgba(246,240,229,.08)}
+.switch .pill{background:var(--rice)}
+.switch button{color:var(--rice)}
+.switch button[aria-selected="true"]{color:var(--ink)}
+@media (hover:hover){.switch button[aria-selected="false"]:hover{color:var(--sakura2)}}
+.pane figure{background:var(--ink3)}
+.favs{border-top-color:rgba(246,240,229,.7)}
+.favs li{border-bottom-color:rgba(246,240,229,.12)}
+.favs li span small{color:rgba(246,240,229,.62)}
+@media (hover:hover){.favs li:hover{background:rgba(246,240,229,.06)}}
+.dialekt{background:rgba(246,240,229,.06);box-shadow:inset 0 0 0 1px rgba(246,240,229,.1)}
+.karte-q{background:var(--rice);color:var(--ink);box-shadow:inset 0 0 0 3px rgba(111,58,76,.18),0 10px 30px rgba(0,0,0,.25)}
+.karte-q footer{color:#5d4c42}
+.karte-q .st{color:#c98a1c}
+#stimmen .karte-q{background:var(--rice)}
+.wand button{color:#b8607e}
+.wand button[aria-pressed="true"]{background:var(--rice);color:#d08a2a}
+@media (hover:hover){.wand.ready button:hover{background:rgba(246,240,229,.1)}}
+.wand-info{color:rgba(246,240,229,.62)}
+.wand-info a{color:var(--sakura)}
+.story h3{color:#7a3a50}
+footer.ft{background:#0d0a09;color:rgba(246,240,229,.6);font-size:14px;padding:26px 0 calc(26px + env(safe-area-inset-bottom))}
+footer.ft .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Abstaende 2 (24.11): Luecken <= 120 / <= 90 */
+#boxen .boxen-grid{margin-top:0}
+#beides.pad{padding-top:12px}
+@media (max-width:899px){.plate{padding-bottom:44px}}
+@media (min-width:900px){#beides.pad{padding-top:8px}}
+@media (min-width:900px) and (max-width:1199px){.plate{width:min(48vw,calc(100svh - 190px - var(--bar0,0px)),640px)}}
+@media (min-width:1600px){#hero{height:auto;min-height:0}.hero-in.wrap{width:min(1560px,100% - 32px);height:auto;grid-template-columns:1fr 1fr;padding-top:calc(var(--hdr) + var(--bar0,0px) + 40px);padding-bottom:76px}.plate{width:min(40vw,calc(100svh - 190px - var(--bar0,0px)),760px)}.hero-in .htext{padding-left:calc((min(1560px,100vw - 32px) - 1180px) / 2)}}
+/*NAHT-START*/
+#hero{background:radial-gradient(70% 45% at 50% 72%,rgba(111,58,76,.22),rgba(111,58,76,0) 70%),linear-gradient(to bottom,#16110f 0%,#16110f 50%,#191310 100%)}
+@media (min-width:900px){#hero{background:radial-gradient(45% 60% at 74% 52%,rgba(111,58,76,.22),rgba(111,58,76,0) 70%),linear-gradient(to bottom,#16110f 0%,#16110f 50%,#191310 100%)}}
+#beides.pad{background:linear-gradient(to bottom,#191310 0%,#1c1512 50%,#201814 100%)}
+#theke.pad{background:linear-gradient(to bottom,#201814 0%,#231a16 50%,#492a31 100%)}
+#karte.pad{background:linear-gradient(to bottom,#492a31 0%,#6f3a4c 50%,#4a2a2e 100%)}
+#boxen.pad{background:linear-gradient(to bottom,#4a2a2e 0%,#24190f 50%,#201710 100%)}
+#stimmen.pad{background:linear-gradient(to bottom,#201710 0%,#1c1512 50%,#191310 100%)}
+#besuch.pad{background:linear-gradient(to bottom,#191310 0%,#16110f 50%,#120e0c 100%)}
+footer.ft{background:linear-gradient(to bottom,#120e0c 0%,#0d0a09 100%)}
+/*NAHT-END*/
+/* Kumo: Syne ist breit -> kleinere Titel, Spalten duerfen nicht wachsen */
+.h1a{font-size:clamp(36px,10.6vw,92px);letter-spacing:-.02em}
+.sh{font-size:clamp(28px,7.6vw,56px);letter-spacing:-.02em}
+.pane h3,.story h3{font-size:clamp(20px,5.6vw,26px)}
+.boxinfo h3,.boxinfo .pr{font-size:clamp(20px,5.8vw,26px)}
+.fach b{font-size:16px}
+.blatt-hd h3{font-size:26px}
+.boxen-grid>*,.theke-grid>*,.karte-grid>*,.stimmen-grid>*,.besuch-grid>*,.dual .pane>*,.theke-l>*{min-width:0}
+@media (max-width:440px){.logo b{font-size:11.5px;letter-spacing:-.01em}.logo small{font-size:10px}.hdr .tel{padding:0 9px;font-size:13px}}
+@media (min-width:740px){.sh{font-size:min(3.7vw,6vh,52px)}}
+@media (min-width:900px){.h1a{font-size:min(5vw,9vh,84px)}}
+</style>
+</head>
+<body>
+
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#hero" aria-label="Kumo Sushi &amp; Momo – nach oben"><i></i><span><b>KUMO</b><small>Sushi &amp; Momo · Weinfelden</small></span></a>
+    <nav class="nav" aria-label="Seiten">
+      <a href="#beides">Sushi &amp; Momo</a><a href="#theke">Theke</a><a href="#karte">Karte</a><a href="#boxen">Boxen</a><a href="#stimmen">Gäste</a><a href="#besuch">Besuch</a>
+    </nav>
+    <div class="right">
+      <a class="btn line tel" href="tel:+41710000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>071 000 00 00</a>
+      <a class="btn red order" href="#karte">Karte</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="hero" aria-label="Willkommen">
+  <div class="wrap hero-in">
+    <div class="htext">
+      <p class="kick"><span class="k-d">Sushi · Momo · Bowls — Weinfelden TG</span><a class="k-m" href="#besuch">Wolkenweg 7 · Weinfelden TG</a></p>
+      <h1><span class="h1a">Das beste Sushi</span>
+        <span class="ending" id="ending" aria-live="polite">
+          <span class="e on"><q>… im ganzen Thurgau!</q><cite>Nina R.</cite></span>
+          <span class="e"><q>… das ich je bestellt habe.</q><cite>Marco T.</cite></span>
+          <span class="e"><q>… in Weinfelden!</q><cite>Selin A.</cite></span>
+        </span>
+      </h1>
+      <div class="score" aria-label="4,9 Sterne aus 128 Bewertungen">
+        <span class="stars" aria-hidden="true">★★★★★<span>★★★★★</span></span>
+        <b id="cnt" aria-hidden="true">0</b>
+        <small>von 128 Gästen<br>4,9 Sterne im Schnitt</small>
+      </div>
+      <div class="hcta">
+        <a class="btn red" href="#karte">Zur Karte</a>
+        <a class="btn line" href="tel:+41710000000">Tisch reservieren</a>
+      </div>
+      <p class="addr"><a href="#besuch">Wolkenweg 7, 8570 Weinfelden</a><span>Mi–So geöffnet</span></p>
+    </div>
+    <div class="plate" aria-hidden="true"><div class="rot"><img src="img/teller-560.webp" srcset="img/teller-560.webp 560w, img/teller-1000.webp 1000w" sizes="(max-width:900px) 92vw, 46vw" width="1000" height="1000" alt="" fetchpriority="high"></div></div>
+  </div>
+  <p class="hint" id="hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>Scrollen – der Teller dreht sich</p>
+</section>
+
+<section id="beides" class="pad">
+  <div class="wrap">
+    <div class="beides-top reveal">
+      <div>
+        <p class="kick">Zwei Küchen, eine Theke</p>
+        <h2 class="sh">Sushi oder Momo?</h2>
+      </div>
+      <div class="switch" id="switch" role="tablist" aria-label="Küche wählen" data-k="sushi">
+        <span class="pill"></span>
+        <button role="tab" aria-selected="true" aria-controls="p-sushi" data-k="sushi">Sushi</button>
+        <button role="tab" aria-selected="false" aria-controls="p-momo" data-k="momo">Momo</button>
+      </div>
+    </div>
+    <div class="dual">
+      <div class="pane on" id="p-sushi" role="tabpanel">
+        <figure><img src="img/nigiri-800.webp" srcset="img/nigiri-800.webp 800w, img/nigiri-1400.webp 1400w" sizes="(max-width:900px) 100vw, 600px" width="1400" height="1050" alt="Nigiri mit Lachs, Thunfisch und Crevetten" loading="lazy"></figure>
+        <div>
+          <h3>Gerollt, wenn Sie bestellen.</h3>
+          <p>Maki, Nigiri und Rainbow Rolls werden erst zubereitet, wenn Sie bestellen – das loben unsere Gäste am meisten. Lachs aus Norwegen, Thunfisch aus Sri Lanka – und für Vegi-Gäste Avocado, Mango und Inari.</p>
+          <ul class="favs">
+            <li><span>Rainbow Salmon<small>Lachs, Avocado, Gurke, Frischkäse, Ikura</small></span><b class="price">11.–</b></li>
+            <li><span>BBQ Salmon Nigiri<small>Lachs mit Knoblauch-Panko und Teriyaki</small></span><b class="price">8.50</b></li>
+            <li><span>Crunchy Roll<small>Ebi Fry, Avocado, Panko, Teriyaki</small></span><b class="price">8.50</b></li>
+            <li><span>777 Spicy Tuna<small>Futomaki mit Thunfischtatar und Gurke</small></span><b class="price">8.–</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pane" id="p-momo" role="tabpanel" aria-hidden="true">
+        <figure><img src="img/momo-700.webp" srcset="img/momo-700.webp 700w, img/momo-1200.webp 1200w" sizes="(max-width:900px) 100vw, 600px" width="1200" height="1500" alt="Gedämpfte Momo im Bambuskorb, daneben Chilisauce" loading="lazy" style="object-position:50% 40%"></figure>
+        <div>
+          <h3>Von Hand gefaltet, gedämpft.</h3>
+          <p>Momo sind tibetische Teigtaschen – bei uns mit Schweizer Rindfleisch oder als Vegi-Variante mit Spinat, Karotten, Champignons und Käse. Dazu gibt es Gemüse und, wer mag, die scharfe Sauce.</p>
+          <ul class="favs">
+            <li><span>Rindfleisch-Momo<small>Rindfleisch aus der Schweiz, mit Gemüse</small></span><b class="price">ab 9.–</b></li>
+            <li><span>Vegi-Momo<small>Spinat, Karotten, Zwiebeln, Champignons, Käse</small></span><b class="price">ab 9.–</b></li>
+            <li><span>Edamame<small>als Auftakt, lauwarm</small></span><b class="price">5.50</b></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <figure class="dialekt reveal">
+      <q>Min Maa isst kei Fisch – bi de Momos isch er jetzt Stammgascht. 😄</q>
+      <cite>Leonie K.</cite>
+      <small>Darum beides: Wer kein Sushi mag, sitzt trotzdem mit am Tisch.</small>
+    </figure>
+  </div>
+</section>
+
+
+<section id="theke" class="pad">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kick">Von der Theke</p>
+      <h2 class="sh">Kleiner Laden, grosses Herz</h2>
+      <p class="lead">«Klein, aber oho.» So fasst es Daniela M. zusammen – und drei Gäste erzählen, warum.</p>
+    </div>
+    <div class="theke-grid">
+      <div class="theke-l">
+      <figure class="theke-foto reveal"><img src="img/bbq-700.webp" srcset="img/bbq-700.webp 700w, img/bbq-1160.webp 1160w" sizes="(max-width:900px) 100vw, 560px" width="1160" height="880" alt="Rainbow Rolls und Sushi auf dem Tresen, daneben eine Flasche Sake" loading="lazy"><figcaption>Gerollt wird vorne an der Theke</figcaption></figure>
+      <div class="antwort reveal">
+      <div class="zahl"><b>128</b><span>Bewertungen,<br>128 Antworten</span></div>
+      <span class="bubble">Merci vielmal! 🙏</span>
+      <p>Auf jede einzelne Bewertung antwortet das Team selbst – meistens kurz und herzlich.</p>
+    </div>
+      </div>
+      <ul class="storys">
+        <li class="story reveal"><h3>Kerze im Maki</h3><blockquote>«Wir haben für den Geburtstag meiner Mutter eine Platte bestellt. Beim Abholen steckte eine kleine Kerze mitten in den Maki – ohne dass wir etwas gesagt hatten. Sie war gerührt.»</blockquote><cite>Patrick S.</cite></li>
+        <li class="story reveal"><h3>Noch schnell vor Feierabend</h3><blockquote>«Wir standen um fünf vor neun vor der Tür, ziemlich hungrig. Statt uns wegzuschicken, hat der Koch noch zwei Bowls gemacht und gelacht: ‹Für Hunger ist nie zu spät.›»</blockquote><cite>Jana W.</cite></li>
+        <li class="story reveal"><h3>Sauce extra, ganz ohne Fragen</h3><blockquote>«Seit dem zweiten Besuch liegt bei meiner Box immer eine extra scharfe Sauce dabei. Ich habe es nur ein einziges Mal erwähnt.»</blockquote><cite>Dario P.</cite></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="karte" class="pad">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kick">Die ganze Karte</p>
+      <h2 class="sh">Eine Bento-Box voller Fächer</h2>
+      <p class="lead">Tippen Sie auf ein Fach – daneben öffnet sich alles, was drin ist, mit Preis. Grüner Punkt: vegan nach Zutatenliste.</p>
+    </div>
+    <div class="karte-grid">
+      <div class="bento" id="bento" role="group" aria-label="Kategorien der Karte"></div>
+      <div class="blatt" id="blatt" aria-live="polite"></div>
+    </div>
+    <p class="herkunft">Herkunft: <b>Rind</b> Schweiz · <b>Lachs</b> Norwegen · <b>Thunfisch</b> Sri Lanka · <b>Crevetten</b> Vietnam. Allergene sagen wir Ihnen gern am Telefon: 071 000 00 00.</p>
+  </div>
+</section>
+
+<section id="boxen" class="pad">
+  <div class="wrap boxen-grid">
+    <div>
+      <div class="reveal">
+        <p class="kick">Zum Abholen</p>
+        <h2 class="sh">Sushi-Boxen <span style="white-space:nowrap">A–F</span></h2>
+        <p class="lead">Von der Box für eine Person bis zur grossen Platte für den Geburtstag. Die Höhe zeigt, wie viele Stücke drin sind.</p>
+      </div>
+      <div class="stapel" id="stapel" role="group" aria-label="Sushi-Box wählen"></div>
+      <div class="boxinfo" id="boxinfo" aria-live="polite"></div>
+    </div>
+    <div class="boxen-r reveal">
+      <figure class="boxfoto"><img src="img/rainbow-700.webp" srcset="img/rainbow-700.webp 700w, img/rainbow-1160.webp 1160w" sizes="(max-width:900px) 100vw, 480px" width="1160" height="866" alt="Rainbow Rolls mit Lachs, Avocado und Tobiko" loading="lazy"></figure>
+      <p class="boxquote"><q>Box D fürs Team-Znacht vorbestellt – reichte locker für vier und war in zwanzig Minuten weg.</q> <cite>– Sandro F.</cite></p>
+    </div>
+  </div>
+</section>
+
+<section id="stimmen" class="pad">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kick">4,9 aus 128 Bewertungen</p>
+      <h2 class="sh">Sterne an der Wand</h2>
+      <p class="lead">Hier hängen die schönsten Stimmen unserer Gäste. Tippen Sie einen Stern an – er erzählt Ihnen, was geschrieben wurde.</p>
+    </div>
+    <div class="stimmen-grid">
+      <div class="karte-q" id="quote">
+        <span class="st" aria-hidden="true">★★★★★</span>
+        <blockquote id="qtext">«Das beste Sushi im ganzen Thurgau – und ich habe viel probiert.»</blockquote>
+        <footer><span id="qwho">Nina R.</span><span id="qwhen">vor 3 Wochen</span></footer>
+      </div>
+      <div>
+        <div class="wand pre" id="wand" role="group" aria-label="Stimmen unserer Gäste"></div>
+        <div class="wand-info"><span id="wandnr">Tippen Sie einen Stern an</span><a href="#stimmen">Alle Bewertungen ansehen →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="besuch" class="pad">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="kick">Besuch</p>
+      <h2 class="sh">Klein, hell, mit Papierlampen</h2>
+      <p class="lead">Helles Holz, Papierlampen über den Tischen und vorne die Theke, an der gerollt wird. Essen Sie bei uns oder holen Sie ab.</p>
+    </div>
+    <div class="besuch-grid">
+      <figure class="saal reveal"><img src="img/saal-900.webp" srcset="img/saal-900.webp 900w, img/saal-1600.webp 1600w" sizes="(max-width:1180px) 100vw, 1180px" width="1600" height="700" alt="Heller Gastraum mit Holztischen und Papierlampen" loading="lazy"></figure>
+      <div class="card">
+        <h3>Öffnungszeiten</h3>
+        <span class="status" id="status"><i></i><span>…</span></span>
+        <div class="days" id="days" role="group" aria-label="Wochentag wählen"></div>
+        <div class="dayinfo" id="dayinfo"></div>
+      </div>
+      <div class="card">
+        <h3>So erreichen Sie uns</h3>
+        <ul class="kontakt">
+          <li><a href="tel:+41710000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>071 000 00 00<small>Anrufen, vorbestellen, Allergene fragen</small></span></a></li>
+          <li><a href="#besuch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Wolkenweg 7, 8570 Weinfelden<small>5 Minuten vom Bahnhof</small></span></a></li>
+          <li><a href="mailto:hallo@example.ch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>hallo@example.ch<small>E-Mail</small></span></a></li>
+        </ul>
+        <div class="pay"><span>TWINT</span><span>Abholung</span><span>Vor Ort essen</span><span>Karte</span></div>
+      </div>
+      <div class="card wide">
+        <h3>Bestellen &amp; reservieren</h3>
+        <p style="margin-top:10px;font-size:15px;color:rgba(246,240,229,.8)">Anrufen, bestellen, abholen – meistens ist alles in einer Viertelstunde bereit.</p>
+        <div class="actions">
+          <a class="btn red" href="#karte">Zur Karte</a>
+          <a class="btn rice" href="tel:+41710000000">Box vorbestellen</a>
+          <a class="btn line" href="tel:+41710000000">Tisch reservieren</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto gross"><img alt=""><button class="x" type="button" aria-label="Schliessen">×</button><p>Tippen zum Zoomen · ausserhalb tippen zum Schliessen</p></div>
+
+<footer class="ft"><div class="wrap"><span>Kumo Sushi &amp; Momo · Wolkenweg 7 · 8570 Weinfelden</span><span><b>fiktive Angaben</b> · Musterentwurf von Julia &amp; Robin Mirku – Namen und Angaben fiktiv. Alle Fotos sind Symbolbilder.</span></div></footer>
+
+<script>
+/* ================= Daten (Musterkarte, Preise beispielhaft) ================= */
+/* [name, zutaten, preis, tags]  tags: v = vegan nach Zutatenliste, vg = vegetarisch, s = scharf, b = BBQ / gegart */
+const KARTE=[
+ {id:"rainbow",n:"Rainbow Rolls",w:2,items:[
+  ["Rainbow Salmon","Lachs, Avocado, Gurke, Frischkäse, Ikura","ab 11.–",""],
+  ["Rainbow BBQ Salmon","Frischkäse, Gurke, Essiggurke, Lachs, Teriyaki, Panko","ab 11.–","b"],
+  ["Rainbow Salmon Mango","Lachs, Mango, Avocado","ab 11.–",""],
+  ["Rainbow Tuna","Thunfisch, Avocado","ab 11.–",""]]},
+ {id:"nigiri",n:"Nigiri",items:[
+  ["Salmon Nigiri","Lachs","7.90",""],["Salmon Avocado","Lachs, Avocado","8.–",""],
+  ["BBQ Salmon Nigiri","Lachs mit Knoblauch-Panko, Teriyaki","8.50","b"],
+  ["Tuna Nigiri","Thunfisch","8.–",""],["Tuna Avocado","Thunfisch, Avocado","9.–",""],
+  ["Ebi Nigiri","Crevette","7.50",""],["Ebi Avocado","Crevette, Avocado","7.90",""],
+  ["Inari Nigiri","Tofutasche","7.–","v"],["Avocado Nigiri","Avocado","7.–","v"],["Tamago","japanisches Omelett","7.50","vg"]]},
+ {id:"uramaki",n:"Uramaki",items:[
+  ["Crunchy Roll","Ebi Fry, Avocado, Mayonnaise, Panko, Teriyaki","ab 8.50","b"],
+  ["Surimi Roll","Krebsfleisch, Avocado, Mayonnaise, Tobiko","ab 8.–",""],
+  ["Mango Flowers Roll","Mango, Avocado, Lachs","ab 8.–",""],
+  ["Power Salmon Roll","Frischkäse, Lachs, Avocado, Schnittlauch","ab 8.–",""],
+  ["Tuna Mousse Roll","gekochter Thunfisch, Gurke, Sesam","ab 8.–","b"],
+  ["Spicy Tuna Roll","Thunfischtatar, Gurke, Sesam","ab 8.–","s"],
+  ["Peace Boy Roll","Mango, Avocado, Gurke, Sesam","ab 7.50","v"]]},
+ {id:"maki",n:"Maki",items:[
+  ["Maki Avocado","Avocado","ab 4.–","v"],["Maki Gurke","Gurke","ab 4.–","v"],
+  ["Maki Sake","Lachs","ab 4.30",""],["Maki Tekka","Thunfisch","ab 4.30",""],
+  ["Maki Sake Avocado","Lachs, Avocado","ab 4.70",""],["Maki Surimi","Krebsfleisch","ab 4.–",""]]},
+ {id:"momo",n:"Momo",w:2,items:[
+  ["Rindfleisch-Momo","gedämpfte Teigtaschen, Schweizer Rindfleisch, mit Gemüse","ab 9.–",""],
+  ["Vegi-Momo","Spinat, Karotten, Zwiebeln, Champignons, Käse","ab 9.–","vg"]]},
+ {id:"futomaki",n:"Futomaki",items:[
+  ["777 Spicy Tuna","Thunfischtatar, Gurke","ab 8.–","s"],
+  ["666 Sake Cucumber","Lachs, Gurke, Salat","ab 7.90",""],
+  ["555 Veggie","Avocado, Gurke, Mango, Salat","ab 7.–","v"]]},
+ {id:"sashimi",n:"Sashimi",items:[
+  ["Salmon Sashimi","Lachs","12.50",""],["Tuna Sashimi","Thunfisch","13.–",""],["Mix Sashimi","Lachs, Thunfisch, Avocado","14.–",""]]},
+ {id:"gunkan",n:"Gunkan",items:[
+  ["Tuna Tatar","Thunfischtatar","9.–",""],["Lachs Tatar","Lachstatar","8.50",""],["Ikura","Lachsrogen","11.50",""],["Tobiko","Fliegenfischrogen","8.50",""]]},
+ {id:"bowls",n:"Bowls",items:[
+  ["Salmon Bowl","Wakame, Edamame, Mango, Avocado, Gurke, Lachs, Sushireis","20.–",""],
+  ["Tuna Bowl","Wakame, Edamame, Mango, Avocado, Gurke, Thunfisch, Sushireis","21.–",""],
+  ["Vegi Bowl","Wakame, Edamame, Mango, Avocado, Gurke, Inari, Sushireis","18.–","v"]]},
+ {id:"vor",n:"Vorspeisen",items:[
+  ["Edamame","","5.50","v"],["Wakame","Algensalat","5.50","v"],["Misosuppe","","5.–",""]]},
+ {id:"dessert",n:"Dessert",items:[
+  ["Dessert Schokolade","","ab 3.–",""],["Dessert Kokos","","ab 3.–",""],["Strawberry Cheesecake","","ab 3.–",""],
+  ["Ben & Jerry’s Peanut Butter Cup","","4.30",""],["Ben & Jerry’s Cookie Dough","","4.30",""]]},
+ {id:"drinks",n:"Getränke",items:[
+  ["Sapporo · Kirin Ichiban · Asahi","japanisches Bier, 3,3 dl","6.–",""],
+  ["Sake","Reiswein, 72 cl","40.–",""],["Sake Junmai Ginjo","75 cl","40.–",""],["Choya","Pflaumenwein, 75 cl","35.–",""],
+  ["Ingwer-, Zitronen- oder Minztee","heiss","4.90",""],
+  ["Oishi Grüntee Honig & Zitrone","5 dl","3.50",""],["Oishi Schwarztee Zitrone","5 dl","3.50",""],["Oishi Kombucha Gold","ohne Zucker, 5 dl","4.90",""],
+  ["Coca-Cola / Zero","5 dl","3.50",""],["Mineral mit / ohne","5 dl","3.50",""],["Red Bull","2,5 dl","3.50",""]]}
+];
+const TAGN={v:"vegan",vg:"vegi",s:"scharf",b:"BBQ"};
+const FOTO={};
+const BOXEN=[
+ {k:"A",p:15,n:["2 Lachs-Nigiri","4 Gurken-Maki","4 Surimi-Rolls"]},
+ {k:"B",p:25,n:["1 Thunfisch-Nigiri","1 Tamago-Nigiri","2 Lachs-Nigiri","4 Surimi-Rolls","2 Futomaki","6 Gurken-Maki"]},
+ {k:"C",p:69,n:["3 Lachs-Nigiri","2 Thunfisch-Nigiri","3 Ebi-Nigiri","6 Thunfisch-Maki","4 Crunchy Rolls","4 Lachs-Sashimi","4 Rainbow Salmon","4 Lachs-Futomaki"]},
+ {k:"D",p:89,n:["2 Lachs-Nigiri","2 Lachs-Avocado-Nigiri","2 Thunfisch-Avocado-Nigiri","3 Ebi-Nigiri","4 Thunfisch-Maki","4 Gurken-Maki","4 Crunchy Rolls","4 Rainbow Salmon","4 Lachs-Futomaki","4 Lachs-Sashimi","4 Salmon Summer Rolls"]},
+ {k:"E",p:120,n:["2 Lachs-Nigiri","2 Lachs-Avocado-Nigiri","2 BBQ-Lachs-Nigiri","2 Thunfisch-Avocado-Nigiri","2 Ebi-Nigiri","2 Thunfisch-Nigiri","4 Thunfisch-Maki","4 Gurken-Maki","4 Lachs-Avocado-Maki","4 Surimi-Rolls","4 Crunchy Rolls","4 BBQ Salmon Rainbow","4 Rainbow Salmon","4 Lachs-Futomaki","4 Lachs-Sashimi"]},
+ {k:"F",p:130,n:["2 Lachs-Nigiri","2 BBQ-Lachs-Nigiri","2 Thunfisch-Nigiri","2 Thunfisch-Avocado-Nigiri","2 Ebi-Nigiri","2 Ebi-Avocado-Nigiri","2 Avocado-Nigiri","2 Inari-Nigiri","4 Gurken-Maki","6 Lachs-Avocado-Maki","6 Avocado-Maki","8 Crunchy Rolls","8 Rainbow Salmon Mango","4 Lachs-Sashimi","4 Lachs-Futomaki","4 Salmon Summer Rolls"]}
+];
+const STIMMEN=[
+ ["Das beste Sushi im ganzen Thurgau – und ich habe viel probiert.","Nina R.","vor 3 Wochen"],
+ ["Alles wird erst gerollt, wenn man bestellt. Das schmeckt man: der Reis ist noch leicht warm, der Fisch kalt und frisch.","Thomas H.","vor 2 Monaten"],
+ ["Die Rindfleisch-Momos sind meine neue Sucht. Saftig, gut gewürzt, und die scharfe Sauce dazu – perfekt.","Laura B.","vor einem Monat"],
+ ["Box C für vier Personen bestellt, pünktlich abgeholt, alles sehr schön angerichtet. Gerne wieder!","Michael G.","vor 4 Monaten"],
+ ["Super freundlich, man fühlt sich sofort willkommen. Kleiner Laden mit grossem Herz.","Daniela M.","vor 2 Monaten"],
+ ["Endlich ein Ort, wo es Sushi und Momo gibt – meine Freundin isst keinen Fisch und war trotzdem glücklich.","Kevin L.","vor 5 Monaten"],
+ ["Das beste Sushi, das ich je bestellt habe. Punkt.","Marco T.","vor einem Jahr"],
+ ["Handgemachte Momo zu fairen Preisen, das findet man selten.","Andrea Z.","vor 6 Monaten"],
+ ["Schön angerichtet, frisch und mit viel Liebe gemacht. Wir kommen jede Woche.","Familie Keller","vor 3 Monaten"],
+ ["In Weinfelden gibt es kein besseres Sushi.","Selin A.","vor 8 Monaten"],
+ ["Die Vegi-Bowl ist riesig und richtig fein. Auch ohne Fisch eine klare Empfehlung.","Sarah N.","vor 2 Wochen"],
+ ["Freundlicher Koch, schnelle Abholung, top Qualität. Mehr braucht es nicht.","Lukas E.","vor 7 Monaten"],
+ ["Rainbow Rolls wie im Bilderbuch – fast zu schön zum Essen.","Mia F.","vor einem Monat"],
+ ["Preis-Leistung stimmt hier wirklich, und die Portionen sind grosszügig.","Reto B.","vor 9 Monaten"],
+ ["Wir bestellen jeden Freitag – bisher war es kein einziges Mal anders als hervorragend.","Claudia & Peter","vor 4 Monaten"],
+ ["Die Crunchy Roll ist der Wahnsinn. Knusprig, warm und kalt zugleich.","Yannick O.","vor 10 Monaten"]
+];
+// fiktiv: Mi–Fr 11:30–13:30 + 17:30–21:30, Sa 17–22, So 17–21, Mo–Di zu
+const HOURS={0:[[17,21]],1:[],2:[],3:[[11.5,13.5],[17.5,21.5]],4:[[11.5,13.5],[17.5,21.5]],5:[[11.5,13.5],[17.5,21.5]],6:[[17,22]]};
+const DN=["So","Mo","Di","Mi","Do","Fr","Sa"], DL=["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"];
+
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ================= Drehteller: ein Wisch spielt bis 170, Seite steht so lange, danach sofort frei ================= */
+(function(){
+  const hero=$("#hero"), cnt=$("#cnt"), ends=$$("#ending .e"), now=()=>performance.now();
+  let p=0,playing=false,done=false,t0=0,raf=0,shown=0;
+  const DUR=1300;
+  const set=v=>{ hero.style.setProperty("--p",v.toFixed(4)); cnt.textContent=Math.round(v*128);
+    const i=v<.36?0:v<.72?1:2; if(i!==shown){ ends[shown].classList.remove("on"); ends[i].classList.add("on"); shown=i; } };
+  const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+  function finish(){ if(done) return; done=true; playing=false; p=1; set(1); cancelAnimationFrame(raf); hero.classList.add("done"); }
+  function loop(){ const k=Math.min(1,(now()-t0)/DUR); p=ease(k); set(p); if(k>=1) finish(); else raf=requestAnimationFrame(loop); }
+  function play(){ if(playing||done) return; playing=true; t0=now(); raf=requestAnimationFrame(loop); setTimeout(()=>{ if(!done) finish(); },DUR+250); }
+  if(reduce || scrollY>10 || location.hash){ p=1; set(1); done=true; hero.classList.add("done"); return; }
+  scrollTo(0,0);
+  addEventListener("scroll",()=>{ if(!done && scrollY>0) scrollTo(0,0); },{passive:true});
+  addEventListener("wheel",e=>{ if(done) return; e.preventDefault(); if(e.deltaY>0) play(); },{passive:false});
+  /* Touch: derselbe Wisch laeuft nach 170 sofort als normales Scrollen weiter */
+  let ty=null, lockedGesture=false;
+  addEventListener("touchstart",e=>{ ty=e.touches[0].clientY; lockedGesture=!done; },{passive:true});
+  addEventListener("touchmove",e=>{ if(ty==null) return; const y=e.touches[0].clientY;
+    if(!done){ e.preventDefault(); if(ty-y>6) play(); return; }
+    if(lockedGesture){ e.preventDefault(); scrollBy(0,ty-y); ty=y; } },{passive:false});
+  addEventListener("touchend",()=>{ ty=null; lockedGesture=false; },{passive:true});
+  addEventListener("keydown",e=>{ if(done) return; if(["ArrowDown","PageDown"," ","End"].includes(e.key)){ e.preventDefault(); play(); } if(["ArrowUp","PageUp","Home"].includes(e.key)) e.preventDefault(); });
+  $$('a[href^="#"]').forEach(a=>a.addEventListener("click",()=>{ if(!done) finish(); }));
+})();
+
+/* ================= Foto gross (Lightbox mit Zoom) ================= */
+(function(){ const lb=$("#lb"), im=lb.querySelector("img"); let z=1,x=0,y=0,drag=null,moved=false;
+  const big=img=>{ const ss=(img.getAttribute("srcset")||"").split(",").map(t=>t.trim().split(" ")[0]).filter(Boolean); return ss.length?ss[ss.length-1]:img.currentSrc||img.src; };
+  const apply=()=>{ im.style.transform=`translate(${x}px,${y}px) scale(${z})`; lb.classList.toggle("zoomed",z>1); };
+  const open=img=>{ im.src=big(img); im.alt=img.alt; z=1;x=0;y=0; apply(); lb.classList.add("open"); document.documentElement.style.overflow="hidden"; };
+  const close=()=>{ lb.classList.remove("open"); document.documentElement.style.overflow=""; };
+  const sel=".pane figure img,.theke-foto img,.boxfoto img,.besuch-grid .saal img,.blatt-foto img";
+  document.addEventListener("click",e=>{ const img=e.target.closest(sel); if(img){ e.preventDefault(); open(img); } });
+  const mark=()=>$$(sel).forEach(i=>i.classList.add("zoomable")); mark(); new MutationObserver(mark).observe($("#blatt"),{childList:true});
+  lb.querySelector(".x").addEventListener("click",close);
+  lb.addEventListener("click",e=>{ if(e.target===lb) close(); });
+  addEventListener("keydown",e=>{ if(e.key==="Escape"&&lb.classList.contains("open")) close(); });
+  im.addEventListener("pointerdown",e=>{ e.preventDefault(); drag={sx:e.clientX,sy:e.clientY,x,y}; moved=false; im.setPointerCapture(e.pointerId); });
+  im.addEventListener("pointermove",e=>{ if(!drag) return; const dx=e.clientX-drag.sx, dy=e.clientY-drag.sy; if(Math.abs(dx)+Math.abs(dy)>6) moved=true; if(z>1&&moved){ x=drag.x+dx; y=drag.y+dy; apply(); } });
+  im.addEventListener("pointerup",e=>{ if(!drag) return; drag=null; if(moved) return;
+    const r=im.getBoundingClientRect(); if(z===1){ const ox=e.clientX-r.left, oy=e.clientY-r.top; z=2.4; x=-(ox*(z-1)); y=-(oy*(z-1)); } else { z=1;x=0;y=0; } apply(); });
+  lb.addEventListener("wheel",e=>e.preventDefault(),{passive:false});
+})();
+
+/* ================= Header ================= */
+(function(){ const h=$("#hdr"); const on=()=>h.classList.toggle("solid",scrollY>30); addEventListener("scroll",on,{passive:true}); on(); })();
+
+/* ================= Einblenden ================= */
+(function(){ const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }),{rootMargin:"0px 0px -8% 0px"});
+  $$(".reveal").forEach(el=>reduce?el.classList.add("in"):io.observe(el)); })();
+
+/* ================= Sushi oder Momo ================= */
+(function(){ const sw=$("#switch");
+  sw.addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b) return; const k=b.dataset.k; sw.dataset.k=k;
+    sw.querySelectorAll("button").forEach(x=>x.setAttribute("aria-selected",x===b));
+    $$(".dual .pane").forEach(p=>{ const on=p.id==="p-"+k; p.classList.toggle("on",on); p.setAttribute("aria-hidden",!on); }); });
+})();
+
+/* ================= Bento-Karte ================= */
+(function(){ const bento=$("#bento"), blatt=$("#blatt");
+  const all=KARTE.flatMap(c=>c.items.map(i=>[...i,c.n]));
+  const vegan={id:"vegan",n:"Vegan",w:2,vegan:true,items:all.filter(i=>i[3]==="v").map(i=>[i[0],(i[1]?i[1]+" · ":"")+i[4],i[2],"v"])};
+  const F=[...KARTE,vegan];
+  const low=c=>{ const ns=c.items.map(i=>parseFloat(i[2].replace("ab ","").replace(".–",""))).filter(n=>!isNaN(n)); return Math.min(...ns); };
+  const fr=n=>Number.isInteger(n)?n+".–":n.toFixed(2);
+  bento.innerHTML=F.map(c=>`<button class="fach${c.w?" w2":""}${c.vegan?" vegan":""}" aria-pressed="false" aria-controls="blatt" data-id="${c.id}"><b>${esc(c.n)}</b><span>${c.items.length} ${c.items.length===1?"Sorte":"Sorten"} · ab ${fr(low(c))}</span></button>`).join("");
+  function show(id,scroll){ const c=F.find(x=>x.id===id);
+    bento.querySelectorAll(".fach").forEach(b=>b.setAttribute("aria-pressed",b.dataset.id===id));
+    const ph=FOTO[c.id]; const W={rainbow:[700,1160],bbq:[700,1160],nigiri:[800,1400],momo:[700,1200]};
+    blatt.innerHTML=(ph?`<figure class="blatt-foto"><img src="img/${ph[0]}-${W[ph[0]][0]}.webp" srcset="img/${ph[0]}-${W[ph[0]][0]}.webp ${W[ph[0]][0]}w, img/${ph[0]}-${W[ph[0]][1]}.webp ${W[ph[0]][1]}w" sizes="(max-width:1000px) 92vw, 520px" alt="${esc(ph[1])}" width="${W[ph[0]][1]}" height="${Math.round(W[ph[0]][1]*.75)}"></figure>`:"")+`<div class="blatt-hd"><h3>${esc(c.n)}</h3><span>${c.items.length} ${c.items.length===1?"Sorte":"Sorten"}</span></div>
+      <ul class="items">${c.items.map(i=>`<li class="item"><span><b>${esc(i[0])}</b>${i[3]?`<span class="tag ${i[3]}">${TAGN[i[3]]}</span>`:""}${i[1]?`<small>${esc(i[1])}</small>`:""}</span><span class="price">${esc(i[2])}</span></li>`).join("")}</ul>
+      <div class="blatt-ft"><p>«ab» = kleinste Portion; Preise in CHF laut Online-Karte.</p><a class="btn red" href="#karte">Bestellen</a></div>`;
+    if(scroll && matchMedia("(max-width:999px)").matches){ const r=blatt.getBoundingClientRect(); if(r.top>innerHeight*.75||r.top<0) blatt.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"}); }
+    if(!matchMedia("(max-width:999px)").matches) blatt.scrollTop=0; }
+  bento.addEventListener("click",e=>{ const b=e.target.closest(".fach"); if(b) show(b.dataset.id,true); });
+  show("rainbow",false);
+})();
+
+/* ================= Boxen A–F ================= */
+(function(){ const st=$("#stapel"), info=$("#boxinfo");
+  const pcs=b=>b.n.reduce((s,x)=>s+parseInt(x),0); const max=Math.max(...BOXEN.map(pcs));
+  st.innerHTML=BOXEN.map((b,i)=>`<button class="kiste" aria-pressed="false" data-k="${b.k}" style="--h:${Math.round(28+72*pcs(b)/max)};--i:${i}"><b>${b.k}</b><span>${pcs(b)}</span></button>`).join("");
+  function show(k){ const b=BOXEN.find(x=>x.k===k), n=pcs(b), per=(b.p/n).toFixed(2), pers=Math.max(1,Math.round(n/12));
+    st.querySelectorAll(".kiste").forEach(x=>x.setAttribute("aria-pressed",x.dataset.k===k));
+    info.innerHTML=`<div class="top"><h3>Sushi Box ${b.k}</h3><span class="pr">${b.p}.–</span></div>
+      <div class="facts"><span>${n} Stück</span><span>${per} Fr. pro Stück</span><span>${pers===1?"für 1 Person":"für ca. "+pers+" Personen"}</span></div>
+      <ul class="chips">${b.n.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+      <a class="btn holz" href="tel:+41710000000">Box ${b.k} vorbestellen</a>`; }
+  /* gleiche Hoehe fuer alle Boxen -> nichts springt beim Wechsel */
+  const fix=()=>{ info.style.minHeight=""; let h=0; const cur=st.querySelector('[aria-pressed="true"]'); BOXEN.forEach(b=>{ show(b.k); h=Math.max(h,info.offsetHeight); }); info.style.minHeight=h+"px"; show(cur?cur.dataset.k:"C"); };
+  st.addEventListener("click",e=>{ const b=e.target.closest(".kiste"); if(!b||b.getAttribute("aria-pressed")==="true") return;
+    st.querySelectorAll(".kiste").forEach(x=>x.setAttribute("aria-pressed",x===b));
+    if(reduce){ show(b.dataset.k); return; }
+    info.classList.add("wechsel"); setTimeout(()=>{ show(b.dataset.k); requestAnimationFrame(()=>info.classList.remove("wechsel")); },200); });
+  show("C");
+  document.fonts.ready.then(fix); let rt; addEventListener("resize",()=>{ clearTimeout(rt); rt=setTimeout(fix,200); });
+})();
+
+/* ================= Sternenwand ================= */
+(function(){ const w=$("#wand"), qt=$("#qtext"), qw=$("#qwho"), qn=$("#qwhen"), nr=$("#wandnr");
+  const star='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.3l-5.8 3.1 1.2-6.5L2.6 9.4l6.5-.8z"/></svg>';
+  w.innerHTML=Array.from({length:120},(_,i)=>`<button aria-pressed="${i===0}" aria-label="Stimme ${i+1}" data-i="${i}">${star}</button>`).join("");
+  const btns=[...w.children]; let cur=0, ready=false;
+  function pick(i){ if(!ready) return; btns[cur].setAttribute("aria-pressed","false"); cur=i; btns[i].setAttribute("aria-pressed","true");
+    const s=STIMMEN[i%STIMMEN.length];
+    qt.classList.add("fade"); setTimeout(()=>{ qt.textContent=`«${s[0]}»`; qw.textContent=s[1]; qn.textContent=s[2]; qt.classList.remove("fade"); },200); }
+  w.addEventListener("click",e=>{ const b=e.target.closest("button"); if(b) pick(+b.dataset.i); });
+  const light=()=>{ if(reduce){ btns.forEach(b=>b.classList.add("lit")); w.classList.remove("pre"); w.classList.add("ready"); ready=true; return; }
+    btns.forEach((b,i)=>setTimeout(()=>b.classList.add("lit"),i*8));
+    setTimeout(()=>{ w.classList.remove("pre"); w.classList.add("ready"); ready=true; },120*8+350); };
+  const io=new IntersectionObserver(es=>{ if(es[0].isIntersecting){ io.disconnect(); light(); } },{rootMargin:"0px 0px -15% 0px"}); io.observe(w);
+})();
+
+/* ================= Öffnungszeiten ================= */
+(function(){ const days=$("#days"), info=$("#dayinfo"), stat=$("#status");
+  const z=()=>{ const f=new Intl.DateTimeFormat("de-CH",{timeZone:"Europe/Zurich",weekday:"short",hour:"numeric",minute:"numeric",hour12:false}).formatToParts(new Date());
+    const g=t=>f.find(x=>x.type===t).value; const wd=["So","Mo","Di","Mi","Do","Fr","Sa"].indexOf(g("weekday").slice(0,2)); return {d:wd<0?new Date().getDay():wd,m:+g("hour")%24*60+ +g("minute")}; };
+  const t=h=>String(Math.floor(h)).padStart(2,"0")+":"+(h%1?"30":"00"), span=d=>HOURS[d].length?HOURS[d].map(r=>t(r[0])+"–"+t(r[1])).join(" · "):"Ruhetag";
+  const now=z(); const order=[2,3,4,5,6,0,1];
+  days.innerHTML=order.map(d=>`<button aria-pressed="${d===now.d}" class="${HOURS[d].length?"":"zu"}" data-d="${d}" aria-label="${DL[d]}">${DN[d]}</button>`).join("");
+  const show=d=>{ days.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.d===d)); info.innerHTML=`<b>${DL[d]}${d===now.d?" · heute":""}</b><span>${span(d)}</span>`; };
+  days.addEventListener("click",e=>{ const b=e.target.closest("button"); if(b) show(+b.dataset.d); });
+  show(now.d);
+  const r=HOURS[now.d].find(x=>now.m>=x[0]*60&&now.m<x[1]*60);
+  if(r){ stat.className="status open"; stat.lastElementChild.textContent=`Jetzt offen · bis ${t(r[1])}`; }
+  else{ const nx=HOURS[now.d].find(x=>now.m<x[0]*60); stat.className="status closed";
+    if(nx) stat.lastElementChild.textContent=`Geschlossen · öffnet heute ${t(nx[0])}`;
+    else{ let d=now.d; for(let i=1;i<8;i++){ d=(now.d+i)%7; if(HOURS[d].length) break; } stat.lastElementChild.textContent=`Geschlossen · öffnet ${(d===(now.d+1)%7)?"morgen":DL[d]} ${t(HOURS[d][0][0])}`; } }
+})();
+</script>
+</body>
+</html>
