@@ -860,7 +860,7 @@ const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
     const ph=FOTO[c.id]; const W={rainbow:[700,1160],bbq:[700,1160],nigiri:[800,1400],momo:[700,1200]};
     blatt.innerHTML=(ph?`<figure class="blatt-foto"><img src="img/${ph[0]}-${W[ph[0]][0]}.webp" srcset="img/${ph[0]}-${W[ph[0]][0]}.webp ${W[ph[0]][0]}w, img/${ph[0]}-${W[ph[0]][1]}.webp ${W[ph[0]][1]}w" sizes="(max-width:1000px) 92vw, 520px" alt="${esc(ph[1])}" width="${W[ph[0]][1]}" height="${Math.round(W[ph[0]][1]*.75)}"></figure>`:"")+`<div class="blatt-hd"><h3>${esc(c.n)}</h3><span>${c.items.length} ${c.items.length===1?"Sorte":"Sorten"}</span></div>
       <ul class="items">${c.items.map(i=>`<li class="item"><span><b>${esc(i[0])}</b>${i[3]?`<span class="tag ${i[3]}">${TAGN[i[3]]}</span>`:""}${i[1]?`<small>${esc(i[1])}</small>`:""}</span><span class="price">${esc(i[2])}</span></li>`).join("")}</ul>
-      <div class="blatt-ft"><p>«ab» = kleinste Portion; Preise in CHF laut Online-Karte.</p><a class="btn red" href="#karte">Bestellen</a></div>`;
+      <div class="blatt-ft"><p>Alle Preise in Franken, inklusive Mehrwertsteuer.</p><a class="btn red" href="#karte">Bestellen</a></div>`;
     if(scroll && matchMedia("(max-width:999px)").matches){ const r=blatt.getBoundingClientRect(); if(r.top>innerHeight*.75||r.top<0) blatt.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"}); }
     if(!matchMedia("(max-width:999px)").matches) blatt.scrollTop=0; }
   bento.addEventListener("click",e=>{ const b=e.target.closest(".fach"); if(b) show(b.dataset.id,true); });
