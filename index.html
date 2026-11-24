@@ -498,7 +498,7 @@ footer.ft{background:linear-gradient(to bottom,#120a0d 0%,#0e080a 100%)}
 .fach b{font-size:16px}
 .blatt-hd h3{font-size:26px}
 .score b{width:3.9em}
-.boxfoto{aspect-ratio:1160/866}
+.boxfoto{aspect-ratio:4/3}
 .boxen-grid>*,.theke-grid>*,.karte-grid>*,.stimmen-grid>*,.besuch-grid>*,.dual .pane>*,.theke-l>*{min-width:0}
 @media (max-width:440px){.logo b{font-size:11.5px;letter-spacing:-.01em}.logo small{font-size:10px}.hdr .tel{padding:0 9px;font-size:13px}}
 @media (min-width:900px){.sh{font-size:min(3.7vw,6vh,52px)}}
@@ -871,7 +871,7 @@ const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
 (function(){ const st=$("#stapel"), info=$("#boxinfo");
   const pcs=b=>b.n.reduce((s,x)=>s+parseInt(x),0); const maxP=Math.max(...BOXEN.map(b=>b.p)); const byP=[...BOXEN].sort((a,c)=>a.p-c.p); const rk=b=>byP.indexOf(b);
   st.innerHTML=BOXEN.map((b,i)=>`<button class="kiste" aria-pressed="false" data-k="${b.k}" style="--h:${(42+58*(.5*b.p/maxP+.5*rk(b)/(BOXEN.length-1))).toFixed(1)};--i:${i}"><b>${b.k}</b><span>${b.p}.–</span></button>`).join("");
-  const SETFOTO={}; /* Kumo: Toms Kumo-Fotos folgen, dann 1:"set-1" … */ /* img/set-X-700.webp + -1600.webp */
+  const SETFOTO={1:"set-1",2:"set-2",3:"set-3",4:"set-4",5:"set-5",6:"set-6"}; /* Kumo: Toms Kumo-Fotos 24.11 */ /* img/set-X-700.webp + -1600.webp */
   const bild=$("#boxbild"), platz=$("#boxplatz"), fig=$("#boxfoto");
   function foto(k,b){ const f=SETFOTO[k];
     if(f){ bild.src=`img/${f}-700.webp`; bild.srcset=`img/${f}-700.webp 700w, img/${f}-1600.webp 1600w`; bild.sizes="(max-width:900px) 100vw, 480px"; bild.alt=`Kumo-Box ${k}: ${b.n.join(", ")}`; bild.hidden=false; platz.hidden=true; }
